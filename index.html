@@ -7,70 +7,51 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h2 style="display: none">My first site</h2>
-		<header class="header container">
-			<div class="header__left">
-				<a href="#"><img src="img/logo.png" alt="logo" class="logo" /></a>
-				<a href="#"><img src="img/search.svg" alt="search" /></a>
-			</div>
-			<nav class="header__right">
-				<h2 style="display: none">My site navigation</h2>
-				<a href="#"><img src="img/menu.svg" alt="menu" class="icon" /></a>
-				<a href="#"><img src="img/reg.svg" alt="reg" class="icon" /></a>
-				<a href="#"><img src="img/cart.svg" alt="cart" class="icon" /></a>
+		<h2 style="display: none">HTML_advanced_Product</h2>
+		<header class="navFooter container">
+			<nav>
+				<div class="navFooter__left-group">
+					<a href="#"><img src="img/logo.png" alt="logo" class="logo" /></a>
+					<a href="#"><img src="img/search.svg" alt="search" /></a>
+				</div>
+				<div class="navFooter__right-group">
+					<a href="#"><img src="img/menu.svg" alt="menu" class="icon" /></a>
+					<a href="#"><img src="img/reg.svg" alt="reg" class="icon" /></a>
+					<a href="#"><img src="img/cart.svg" alt="cart" class="icon" /></a>
+				</div>
 			</nav>
 		</header>
 
-		<section class="head container">
-			<img class="promo__img head__image" src="img/promo.png" alt="Brand Image" />
-			<div class="promo__content">
-				<div class="promo__info">
-					<h1 class="promo__title">THE BRAND</h1>
-					<h2 class="promo__heading">OF LUXERIOUS</h2>
-					<h2 class="fashon">FASHION</h2>
-				</div>
+		<header class="top-head container">
+			<h2 class="top-head__heading">NEW ARRIVALS</h2>
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__link">HOME /</a>
+				<a href="#" class="breadcrumbs__link">MEN /</a>
+				<a href="#" class="breadcrumbs__link breadcrumbs__link_site">NEW ARRIVALS</a>
 			</div>
+		</header>
+		<section class="bigPhoto container">
+			<img src="img/Left_arrow.png" alt="leftArrow" />
+			<img src="img/Img1_product.png" alt="bigPhoto" />
+			<img src="img/Right_arrow.png" alt="rightArrow" />
 		</section>
-
-		<section class="sale center container">
-			<div class="sale__item">
-				<img src="img/si1.jpg" alt="sale image" />
-				<div class="sale__content">
-					<p class="sale__text">30% OFF</p>
-					<h3 class="sale__heading">FOR WOMEN</h3>
-				</div>
-			</div>
-			<div class="sale__item">
-				<img src="img/si2.jpg" alt="sale image" />
-				<div class="sale__content">
-					<p class="sale__text">30% OFF</p>
-					<h3 class="sale__heading">FOR MEN</h3>
-				</div>
-			</div>
-			<div class="sale__item">
-				<img src="img/si3.jpg" alt="sale image" />
-				<div class="sale__content">
-					<p class="sale__text">30% OFF</p>
-					<h3 class="sale__heading">FOR KIDS</h3>
-				</div>
-			</div>
-			<div class="sale__item sale__item_big">
-				<img src="img/sibig.jpg" alt="sale image" />
-				<div class="sale__content">
-					<p class="sale__text">30% OFF</p>
-					<h3 class="sale__heading">ACCESORIES</h3>
-				</div>
-			</div>
-		</section>
-
-		<section class="arrivals_header container">
+		<section class="centralBlockContent container content">
 			<div>
-				<h2>Featured Items</h2>
-				<p>Shop for items based on what we featured in this week</p>
+				<h2 class="entralBlockContent__1stHeader" c>WOMEN COLLECTION</h2>
+				<h2 class="entralBlockContent__2ndHeader" c>MOSCHINO CHEAP AND CHIC</h2>
+				<p>
+					Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+					collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
+					rather than exceptional portals.
+				</p>
+				<p class="arrivals_price">$561</p>
+			</div>
+			<div class="centralBlockButton">
+				<button class="centralBlockButton__button"><img src="img/Basket.png" alt="basket" />Add to Cart</button>
 			</div>
 		</section>
 
-		<section class="new_arrivals center container">
+		<section class="content container">
 			<div class="grid_container">
 				<div class="grid_item">
 					<img src="img/product1.jpg" alt="Product 1" class="grid_image" />
@@ -141,28 +122,7 @@
 			</div>
 		</section>
 
-		<section class="true container">
-			<button class="button">Browse All Products</button>
-		</section>
-
-		<footer class="footer container">
-			<div class="footer__section">
-				<div class="footer__item">
-					<img src="./img/Foot_1_1.svg" alt="Free Delivery Icon" />
-					<h3>Free Delivery</h3>
-					<p>Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.</p>
-				</div>
-				<div class="footer__item">
-					<img src="./img/Foot_1_2.png" alt="Sales & Discounts Icon" />
-					<h3>Sales &amp;&nbsp;Discount</h3>
-					<p>Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.</p>
-				</div>
-				<div class="footer__item">
-					<img src="./img/Foot_1_3.png" alt="Quality Assurance Icon" />
-					<h3>Quality Assurance</h3>
-					<p>Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.</p>
-				</div>
-			</div>
+		<section class="footer__section container">
 			<div class="footer__testimonial-subscribe">
 				<div class="footer__testimonial">
 					<img src="./img/Foot_face.png" alt="Profile Picture" />
@@ -179,6 +139,9 @@
 					</form>
 				</div>
 			</div>
+		</section>
+
+		<footer class="footer container">
 			<div class="footer__copyright-social">
 				<p>© 2021 Brand All Rights Reserved.</p>
 				<div class="footer__social-icons">
