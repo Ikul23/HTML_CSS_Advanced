@@ -31,23 +31,45 @@
 			</div>
 		</header>
 		<section class="bigPhoto container">
-			<img src="img/Left_arrow.png" alt="leftArrow" />
-			<img src="img/Img1_product.png" alt="bigPhoto" />
-			<img src="img/Right_arrow.png" alt="rightArrow" />
+			<a class="bigPhoto__leftArrow" href="#">
+				<img src="img/Left_arrow.png" alt="leftArrow" />
+			</a>
+
+			<img class="bigPhoto__Image" src="img/Img1_product.png" alt="bigPhoto" />
+
+			<a class="bigPhoto__rightArrow" href="#">
+				<img src="img/Right_arrow.png" alt="rightArrow" />
+			</a>
 		</section>
+
 		<section class="centralBlockContent container content">
 			<div>
-				<h2 class="entralBlockContent__1stHeader" c>WOMEN COLLECTION</h2>
-				<h2 class="entralBlockContent__2ndHeader" c>MOSCHINO CHEAP AND CHIC</h2>
-				<p>
+				<h2 class="centralBlockContent__header">WOMEN COLLECTION</h2>
+				<img class="centralBlockContent__line" src="img/Line.png" alt="Line" />
+				<h2 class="centralBlockContent__subheader">MOSCHINO CHEAP AND CHIC</h2>
+				<p class="centralBlockContent__text">
 					Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
 					collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
 					rather than exceptional portals.
 				</p>
-				<p class="arrivals_price">$561</p>
-			</div>
-			<div class="centralBlockButton">
-				<button class="centralBlockButton__button"><img src="img/Basket.png" alt="basket" />Add to Cart</button>
+				<p class="centralBlockContent__price">$561</p>
+				<div class="centralBlockContent__custom-select content">
+					<select id="color" name="color">
+						<option value="color">CHOOSE COLOR</option>
+					</select>
+					<select name="size" id="size">
+						<option value="size">CHOOSE SIZE</option>
+					</select>
+					<select name="quantity" id="quantity">
+						<option value="quantity">QUANTITY</option>
+					</select>
+				</div>
+				<div class="centralBlockButton">
+					<button class="centralBlockButton__button">
+						<img src="img/Basket.png" alt="basket" />
+						<p class="centralBlockButton__button_text">Add to Cart</p>
+					</button>
+				</div>
 			</div>
 		</section>
 
@@ -77,39 +99,6 @@
 				</div>
 				<div class="grid_item">
 					<img src="./img/Product 3.png" alt="Product 3" class="grid_image" />
-					<div class="grid_text">
-						<h2>ELLERY X M'O CAPSULE</h2>
-						<p>
-							Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up
-							with Moda Operandi.
-						</p>
-						<p class="arrivals_price">$52.00</p>
-					</div>
-				</div>
-				<div class="grid_item">
-					<img src="./img/Product 4.png" alt="Product 4" class="grid_image" />
-					<div class="grid_text">
-						<h2>ELLERY X M'O CAPSULE</h2>
-						<p>
-							Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up
-							with Moda Operandi.
-						</p>
-						<p class="arrivals_price">$52.00</p>
-					</div>
-				</div>
-				<div class="grid_item">
-					<img src="./img/Product 5.png" alt="Product 5" class="grid_image" />
-					<div class="grid_text">
-						<h2>ELLERY X M'O CAPSULE</h2>
-						<p>
-							Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up
-							with Moda Operandi.
-						</p>
-						<p class="arrivals_price">$52.00</p>
-					</div>
-				</div>
-				<div class="grid_item">
-					<img src="./img/Product 6.png" alt="Product 6" class="grid_image" />
 					<div class="grid_text">
 						<h2>ELLERY X M'O CAPSULE</h2>
 						<p>
