@@ -1,0 +1,21 @@
+.navFooter {
+  background: $backgroundColorNavFooter;
+  padding: $navFooterPadding;
+  font-size: 14px;
+  color: #fbfbfb;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__left-group,
+  &__right-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}

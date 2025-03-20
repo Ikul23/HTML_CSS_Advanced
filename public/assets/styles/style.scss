@@ -1,40 +1,14 @@
+// style.scss
+@charset "UTF-8";
 @import 'vars';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+/* Обнуление стилей */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@mixin flexCenter() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-@mixin spaceBetween() {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin searchButton() {
-  cursor: pointer;
-  border: none;
-}
-
-@mixin subscribeButton() {  
-      background: white;
-      color: #FF6F61;
-      border: 2px solid #FF6F61;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 0;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
 
 body {
   font-family: $fontStyle;
@@ -50,17 +24,18 @@ a {
 
 .container {
   max-width: $widthSite;
-  margin: 0 auto; 
-  padding: 0 20px; 
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .content {
-  max-width: $widthSite;
-  margin: 0 auto; 
-  padding-left: 20px; 
+  max-width: $contentWidth;
+  margin: 0 auto;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
+/* Шапка */
 .navFooter {
   background: $backgroundColorNavFooter;
   padding: $navFooterPadding;
@@ -68,48 +43,60 @@ a {
   color: #fbfbfb;
 
   nav {
-    @include spaceBetween(); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 
   &__left-group,
   &__right-group {
-    @include flexCenter();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
 }
 
-
+/* Хлебные крошки */
 .breadcrumbs {
-  @include flexCenter();
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__link {
     font-weight: 300;
     font-size: 14px;
     color: #636363;
-  }
 
-  &__link_site {
-    font-weight: 700;
-    color: $colorTextHeading;
+    &_site {
+      font-weight: 700;
+      color: $colorTextHeading;
+    }
   }
 }
 
+/* Секция top-head */
 .top-head {
   background-color: $backgroundColorMain;
   min-height: $minHeightContainer;
-  @include spaceBetween();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__heading {
     font-weight: 400;
     font-size: 24px;
-    color: #f16d7f;
+    color: $colorTextHeading;
   }
 }
 
+/* Большое фото */
 .bigPhoto {
   background: $backgroundColorMain;
-  @include spaceBetween();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__leftArrow,
   &__rightArrow {
@@ -121,17 +108,20 @@ a {
   }
 }
 
+/* Центральный блок */
 .centralBlockContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 120px;
-  padding: 0 20px; 
+  padding: 0 20px;
+  border: 2px solid black;
+
   &__header {
     font-weight: 300;
     font-size: 14px;
-    color: #f16d7f;
+    color: $colorTextHeading;
   }
 
   &__line {
@@ -147,7 +137,6 @@ a {
     margin-bottom: 15px;
     text-align: center;
   }
-
 
   &__price {
     font-weight: 300;
@@ -178,8 +167,11 @@ a {
     justify-content: center;
 
     &__button {
-      @include flexCenter();
-      @include searchButton();
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
 
       &:hover {
         background: #ff6f61;
@@ -189,18 +181,21 @@ a {
       img {
         margin-right: 10px;
       }
-    }
 
-    &__button_text {
-      font-weight: 400;
-      font-size: 16px;
-      color: #f26376;
+      &_text {
+        font-weight: 400;
+        font-size: 16px;
+        color: #f26376;
+      }
     }
   }
 }
 
+/* Основной контент */
 .main_container {
-  @include flexCenter();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 120px;
   margin-bottom: 120px;
 
@@ -222,25 +217,31 @@ a {
   &__arrivals_price {
     font-weight: 400;
     font-size: 16px;
-    color: #f16d7f;
+    color: $colorTextHeading;
     margin-top: 10px;
   }
 }
 
+/* Подписка */
 .subscribe {
   padding: 0;
 
   &__testimonial-subscribe {
-    @include spaceBetween();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-image: url('./img/Foot_2_back.jpg');
+    background-image: url("./img/Foot_2_back.jpg");
     background-size: cover;
     background-position: center;
     padding: 97px 126px;
-    margin: 0 auto; 
+    margin: 0 auto;
+
     &__testimonial,
-      &__subscribe {
-        max-width: 50%;
+    &__subscribe {
+      max-width: 50%;
+    }
+
     img {
       margin-right: 20px;
       border-radius: 50%;
@@ -248,70 +249,78 @@ a {
       height: 80px;
     }
 
-        blockquote {
-          font-style: italic;
-          color: #5e5e5e;
-          font-size: 16px;
-          line-height: 1.5;
-    
-          p {
-            @include flexCenter();
-            margin: 0;
-          }
+    blockquote {
+      font-style: italic;
+      color: #5e5e5e;
+      font-size: 16px;
+      line-height: 1.5;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #4d4d4d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #5e5e5e;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      justify-content: flex-end;
+
+      input[type="email"] {
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 2px solid #dcdcdc;
+        border-radius: 0;
+        margin-right: 10px;
+        width: 250px;
+
+        &:focus {
+          outline: none;
+          border-color: #ff6f61;
         }
-        }    
-    
-        h3 {
-          font-size: 24px;
-          color: #4d4d4d;
-          margin-bottom: 10px;
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          background: #ff6f61;
+          color: white;
         }
-    
-        p {
-          font-size: 14px;
-          color: #5e5e5e;
-          margin-bottom: 20px;
-        }
-    
-        form {
-          display: flex;
-          justify-content: flex-end;
-    
-          input[type="email"] {
-            padding: 10px 15px;
-            font-size: 14px;
-            border: 2px solid #dcdcdc;
-            border-radius: 0;
-            margin-right: 10px;
-            width: 250px;
-    
-            &:focus {
-              outline: none;
-              border-color: #ff6f61;
-            }
-          }
-    
-          button {
-            @include searchButton();
-    
-            &:hover {
-              background: #ff6f61;
-              color: white;
-            }
-          }
-        }
+      }
+    }
+  }
 }
-}
+
+/* Подвал */
 .navFooter {
   background: $backgroundColorNavFooter;
   padding: 20px;
   font-size: 14px;
   color: #fbfbfb;
-  @include spaceBetween();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__copyright-social,
   &__social-icons {
-    @include flexCenter();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
   }
 }

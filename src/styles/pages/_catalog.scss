@@ -1,0 +1,15 @@
+.catalog {
+  margin-top: 40px;
+
+  &__header {
+    font-size: 24px;
+    color: $colorTextHeading;
+    margin-bottom: 20px;
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

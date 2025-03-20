@@ -1,0 +1,17 @@
+.navFooter {
+  background: $backgroundColorNavFooter;
+  padding: 20px;
+  font-size: 14px;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__copyright-social,
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
