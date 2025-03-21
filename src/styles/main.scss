@@ -1,5 +1,6 @@
-@import 'vars'; 
-@import 'global'; 
+// main.scss
+@import 'vars';
+@import 'global';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/buttons';
@@ -8,3 +9,6 @@
 @import 'pages/product';
 @import 'pages/cart';
 @import 'pages/registration';
+@import 'components/features';
+@import 'components/filter-sort'; 
+@import 'components/pagination'; 

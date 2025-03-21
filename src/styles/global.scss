@@ -1,4 +1,3 @@
-// global.scss
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  font-family: $fontStyle;
+  font-family: $fontStyle; 
   color: #222;
 }
 
@@ -21,7 +20,7 @@ a {
 }
 
 .container {
-  max-width: $widthSite;
+  max-width: $widthSite; 
   margin: 0 auto;
   padding: 0 20px;
 }
