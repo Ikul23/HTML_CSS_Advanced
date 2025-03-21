@@ -1,6 +1,11 @@
-@import 'vars';
-@import 'global';
+// src/styles/main.scss
+@import 'vars'; // Импорт переменных
+@import 'global'; // Глобальные стили
 @import 'components/header';
 @import 'components/footer';
+@import 'components/buttons';
 @import 'pages/index';
 @import 'pages/catalog';
+@import 'pages/product';
+@import 'pages/cart';
+@import 'pages/registration';

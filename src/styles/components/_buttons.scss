@@ -1,11 +1,29 @@
-.button {
-  background: $colorTextHeading;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+// _buttons.scss
+.centralBlockButton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 
-  &:hover {
-    background: darken($colorTextHeading, 10%);
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      background: #ff6f61;
+      color: white;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    &_text {
+      font-weight: 400;
+      font-size: 16px;
+      color: #f26376;
+    }
   }
 }

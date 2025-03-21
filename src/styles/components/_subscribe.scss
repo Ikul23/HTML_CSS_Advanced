@@ -1,0 +1,83 @@
+// _subscribe.scss
+.subscribe {
+  padding: 0;
+
+  &__testimonial-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-image: url("../assets/images/Foot_2_back.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 97px 126px;
+    margin: 0 auto;
+
+    &__testimonial,
+    &__subscribe {
+      max-width: 50%;
+    }
+
+    img {
+      margin-right: 20px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #5e5e5e;
+      font-size: 16px;
+      line-height: 1.5;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #4d4d4d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #5e5e5e;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      justify-content: flex-end;
+
+      input[type="email"] {
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 2px solid #dcdcdc;
+        border-radius: 0;
+        margin-right: 10px;
+        width: 250px;
+
+        &:focus {
+          outline: none;
+          border-color: #ff6f61;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          background: #ff6f61;
+          color: white;
+        }
+      }
+    }
+  }
+}

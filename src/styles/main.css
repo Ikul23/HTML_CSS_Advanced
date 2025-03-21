@@ -1,0 +1,72 @@
+.navFooter {
+  background: #222222;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fbfbfb;
+}
+.navFooter nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navFooter__left-group, .navFooter__right-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navFooter {
+  background: #222222;
+  padding: 20px;
+  font-size: 14px;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navFooter__copyright-social, .navFooter__social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  background: #f16d7f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ed3e56;
+}
+
+.top-head {
+  background-color: #F8F3F4;
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-head__heading {
+  font-weight: 400;
+  font-size: 24px;
+  color: #f16d7f;
+}
+
+.catalog {
+  margin-top: 40px;
+}
+.catalog__header {
+  font-size: 24px;
+  color: #f16d7f;
+  margin-bottom: 20px;
+}
+.catalog__products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}/*# sourceMappingURL=main.css.map */
