@@ -1,16 +1,15 @@
 .product-grid {
   display: flex;
-  flex-wrap: wrap; // Перенос элементов на новую строку
-  gap: 20px; // Отступы между товарами
-}
+  flex-wrap: wrap; 
+  gap: 20px; }
 
 .main_container__main_item {
-  flex: 1 1 calc(33.333% - 20px); // 3 колонки с отступами
+  flex: 1 1 calc(33.333% - 20px); 
   background: #fff;
   border: 1px solid #e5e5e5;
   padding: 20px;
   text-align: center;
-  box-sizing: border-box; // Учитываем padding в общей ширине
+  box-sizing: border-box; 
 
   .main_image {
     width: 100%;
@@ -34,5 +33,33 @@
     font-size: 16px;
     font-weight: 500;
     color: #f16d7f;
+  }
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  .filter,
+  .sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #222;
+    }
   }
 }

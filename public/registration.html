@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Page</title>
+		<link rel="stylesheet" href="../src/styles/main.css" />
+	</head>
+	<body>
+		<!-- Верхняя навигация -->
+		<header class="navFooter container">
+			<nav>
+				<div class="navFooter__left-group">
+					<a href="#"><img src="assets/images/logo.png" alt="logo" class="logo" /></a>
+					<a href="#"><img src="assets/images/search.svg" alt="search" /></a>
+				</div>
+				<div class="navFooter__right-group">
+					<a href="#"><img src="assets/images/menu.svg" alt="menu" class="icon" /></a>
+					<a href="#"><img src="assets/images/reg.svg" alt="reg" class="icon" /></a>
+					<a href="#"><img src="assets/images/cart.svg" alt="cart" class="icon" /></a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Breadcrumbs -->
+		<section class="top-head container">
+			<h2 class="top-head__heading">REGISTRATION</h2>
+		</section>
+
+		<!-- Блок регистрации -->
+		<section class="registration container">
+			<div class="registration__container">
+				<div class="registration__form">
+					<h3>Your Name</h3>
+					<input type="text" placeholder="First Name" class="registration__input" />
+					<input type="text" placeholder="Last Name" class="registration__input" />
+
+					<div class="registration__gender">
+						<label class="registration__radio">
+							<input type="radio" name="gender" value="male" />
+							<span class="registration__radio-text">Male</span>
+						</label>
+						<label class="registration__radio">
+							<input type="radio" name="gender" value="female" />
+							<span class="registration__radio-text">Female</span>
+						</label>
+					</div>
+
+					<h3>Login details</h3>
+					<input type="email" placeholder="Email" class="registration__input" />
+					<input type="password" placeholder="Password" class="registration__input" />
+					<p class="centralBlockContent__text">
+						Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+					</p>
+
+					<button class="registration__button">
+						JOIN NOW <img src="assets/images/Registration_arrow.png" alt="Arrow" />
+					</button>
+				</div>
+
+				<div class="registration__benefits">
+					<h2>LOYALTY HAS ITS PERKS</h2>
+					<p class="registration__benefits-text">
+						Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+						soon as you join:
+					</p>
+
+					<ul class="registration__benefits-list">
+						<li>15% off welcome offer</li>
+						<li>Free shipping, returns and exchanges on all orders</li>
+						<li>$10 off a purchase on your birthday</li>
+						<li>Early access to products</li>
+						<li>Exclusive offers & rewards</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- Блок подписки -->
+		<section class="subscribe container">
+			<div class="subscribe__testimonial-subscribe">
+				<div class="subscribe__testimonial">
+					<img src="assets/images/Foot_face.png" alt="Profile Picture" />
+					<blockquote>
+						<p>"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum."</p>
+					</blockquote>
+				</div>
+				<div class="subscribe__subscribe">
+					<h3>SUBSCRIBE</h3>
+					<p>FOR OUR NEWSLETTER AND PROMOTION</p>
+					<form action="#">
+						<input type="email" placeholder="Enter Your Email" required />
+						<div class="centralBlockButton">
+							<button type="submit" class="centralBlockButton__button">
+								<span class="centralBlockButton__button_text">Subscribe</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Подвал -->
+		<footer class="navFooter container">
+			<div class="navFooter__copyright-social">
+				<p>© 2021 Brand All Rights Reserved.</p>
+			</div>
+			<div class="navFooter__social-icons">
+				<a href="#"><img src="assets/images/Foot_3_f.svg" alt="Facebook" /></a>
+				<a href="#"><img src="assets/images/Foot_3_i.png" alt="Instagram" /></a>
+				<a href="#"><img src="assets/images/Foot_3_h.png" alt="Pinterest" /></a>
+				<a href="#"><img src="assets/images/Foot_3_t.png" alt="Twitter" /></a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,3 +1,4 @@
+// _footer.scss
 .navFooter {
   background: $backgroundColorNavFooter;
   padding: 20px;
@@ -13,5 +14,121 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+}
+// subscribe.scss
+.subscribe {
+  padding: 0;
+
+  &__testimonial-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-image: url("./img/Foot_2_back.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 97px 126px;
+    margin: 0 auto;
+  }
+
+  &__testimonial {
+    max-width: 50%;
+
+    img {
+      margin-right: 20px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #5e5e5e;
+      font-size: 16px;
+      line-height: 1.5;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+    }
+  }
+
+  &__subscribe {
+    max-width: 50%;
+
+    h3 {
+      font-size: 24px;
+      color: #4d4d4d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #5e5e5e;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      input[type=email] {
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 2px solid #dcdcdc;
+        border-radius: 0;
+        margin-right: 10px;
+        width: 250px;
+
+        &:focus {
+          outline: none;
+          border-color: #ff6f61;
+        }
+      }
+
+      .centralBlockButton {
+        margin-top: 0;
+      }
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    &__testimonial-subscribe {
+      padding: 70px 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__testimonial-subscribe {
+      flex-direction: column;
+      padding: 50px 30px;
+    }
+
+    &__testimonial,
+    &__subscribe {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__subscribe form {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      input[type=email] {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      .centralBlockButton {
+        width: 100%;
+      }
+    }
   }
 }

@@ -8,8 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 20px;
     cursor: pointer;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #f26376;
+    transition: all 0.3s ease;
 
     &:hover {
       background: #ff6f61;
@@ -24,6 +27,52 @@
       font-weight: 400;
       font-size: 16px;
       color: #f26376;
+      transition: color 0.3s ease;
+    }
+
+    &:hover &_text {
+      color: white;
+    }
+  }
+
+  // Специфические стили для кнопки в блоке подписки
+  .subscribe__subscribe & {
+    margin-top: 0;
+
+    &__button {
+      min-width: 100px;
+    }
+  }
+}
+
+// Дополнительные классы для различных типов кнопок
+.button {
+  &--primary {
+    background-color: #f26376;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken(#f26376, 10%);
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: #f26376;
+    border: 1px solid #f26376;
+    padding: 11px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #f26376;
+      color: white;
     }
   }
 }

@@ -1,3 +1,4 @@
+// filter-sort.scss
 .filter-sort {
   display: flex;
   justify-content: space-between;
@@ -11,6 +12,7 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    border: none;
 
     img {
       width: 20px;
