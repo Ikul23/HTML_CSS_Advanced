@@ -11,6 +11,8 @@
 
 │ ├── cart.html # Страница корзины
 
+│ ├── cregitration.html # Страница регистрации
+
 │ ├── assets/
 │ │ └── images/ # Изображения
 
@@ -29,6 +31,8 @@
 │ │ │ ├── \_footer.scss
 │ │ │ └── \_buttons.scss
 │ │ │ └── \_features.scss
+│ │ │ └── \_filter-sort.scss
+│ │ │ └── \_pagination.scss
 
 │ │ └── pages/ # Стили для страниц
 │ │ ├── \_index.scss
