@@ -1,4 +1,3 @@
-// _product.scss
 .bigPhoto {
   display: flex;
   justify-content: space-between;
@@ -106,16 +105,16 @@
   align-items: center;
   margin-top: 120px;
   margin-bottom: 120px;
-  max-width: $contentWidth; 
+  max-width: $contentWidth;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px; 
+  padding: 0 20px;
 
   &__main_item {
     background: $backgroundColorMain;
     padding: 20px;
     text-align: center;
-    width: calc(33.333% - 20px);  
+    width: calc(33.333% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     img {
@@ -221,6 +220,170 @@
         &:hover {
           background: #ff6f61;
           color: white;
+        }
+      }
+    }
+  }
+}
+
+/* Media queries для адаптивности */
+@media (max-width: 1024px) {
+  .bigPhoto {
+    padding: 15px 0;
+
+    &__Image {
+      max-width: 90%;
+    }
+  }
+
+  .centralBlockContent {
+    margin-top: 80px;
+    padding: 0 15px;
+
+    &__header {
+      font-size: 13px;
+    }
+
+    &__text {
+      font-size: 13px;
+      max-width: 500px;
+    }
+
+    &__price {
+      font-size: 20px;
+    }
+
+    &__custom-select {
+      select {
+        width: 180px;
+      }
+    }
+
+    .centralBlockButton {
+      margin-top: 15px;
+
+      &__button_text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .main_container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    &__main_item {
+      width: calc(50% - 15px);
+      padding: 15px;
+    }
+  }
+
+  .subscribe {
+    padding: 70px 100px;
+
+    &__testimonial-subscribe {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__testimonial,
+      &__subscribe {
+        max-width: 100%;
+      }
+
+      img {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      form {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bigPhoto {
+    padding: 10px 0;
+
+    &__Image {
+      max-width: 80%;
+    }
+  }
+
+  .centralBlockContent {
+    margin-top: 60px;
+    padding: 0 10px;
+
+    &__header {
+      font-size: 12px;
+    }
+
+    &__text {
+      font-size: 12px;
+      max-width: 400px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+
+    &__custom-select {
+      select {
+        width: 160px;
+      }
+    }
+
+    .centralBlockButton {
+      margin-top: 10px;
+
+      &__button_text {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .main_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &__main_item {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .subscribe {
+    padding: 50px 20px;
+
+    &__testimonial-subscribe {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__testimonial,
+      &__subscribe {
+        max-width: 100%;
+      }
+
+      img {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      form {
+        flex-direction: column;
+        align-items: center;
+
+        input[type="email"] {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        button {
+          width: 100%;
         }
       }
     }

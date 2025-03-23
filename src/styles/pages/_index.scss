@@ -1,5 +1,3 @@
-
-
 .header {
   min-height: 75px;
   background: #222;
@@ -198,26 +196,24 @@
   text-align: center;
 }
 
-
-
-
-
-/* Макет для планшетов 1024px-768px */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    padding: 0 20px;
+/* Media queries для адаптивности */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 15px;
   }
 
   .head {
-    flex-wrap: wrap;
+    min-height: 120px;
+    padding: 15px;
   }
 
-  .head__image {
-    display: none;
+  .head__heading {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .promo__info {
-    margin-top: 10px;
+    margin-top: 30%;
   }
 
   .promo__title {
@@ -226,93 +222,74 @@
   }
 
   .promo__heading {
-    font-size: 28px;
-    line-height: 32px;
-  }
-
-  .promo__content {
-    justify-content: center;
-    margin-bottom: 56px;
-  }
-
-  .sale {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .sale__item {
     width: calc(50% - 10px);
-    margin-bottom: 20px;
-  }
-
-  .sale__item_big {
-    width: 100%;
-  }
-
-  .sale__content {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .sale__text {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .new_arrivals {
-    padding: 30px 0;
   }
 
   .grid_container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
   .arrivals_header {
     font-size: 24px;
-    padding: 20px;
   }
 
-  .footer__section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 10px;
   }
 
-  .footer__item {
-    padding: 20px 0;
-    text-align: center;
+  .head {
+    min-height: 100px;
+    padding: 10px;
   }
 
-  .footer__testimonial-subscribe {
-    flex-direction: column;
+  .head__heading {
+    font-size: 18px;
+    line-height: 22px;
   }
 
-  .footer__testimonial,
-  .footer__subscribe {
-    padding: 20px 0;
-    text-align: center;
+  .promo__info {
+    margin-top: 20%;
+    padding-left: 10px;
   }
 
-  .footer__subscribe form {
-    flex-direction: column;
+  .promo__title {
+    font-size: 28px;
+    line-height: 32px;
   }
 
-  .footer__subscribe input[type="email"],
-  .footer__subscribe button {
-    border-radius: 20px;
-    margin-bottom: 10px;
+  .promo__heading {
+    font-size: 20px;
+    line-height: 24px;
   }
 
-  .footer__copyright-social {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .sale__item {
+    width: 100%;
   }
 
-  .footer__social-icons {
-    margin-top: 10px;
+  .grid_container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .arrivals_header {
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }

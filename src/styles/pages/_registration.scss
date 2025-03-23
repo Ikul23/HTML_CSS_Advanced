@@ -9,11 +9,12 @@
   gap: 50px;
 }
 
-    p {
-      font-size: 14px;
-      color: #5e5e5e;
-      margin-bottom: 15px;
-    }
+p {
+  font-size: 14px;
+  color: #5e5e5e;
+  margin-bottom: 15px;
+}
+
 .registration__form {
   width: 45%;
 }
@@ -106,10 +107,39 @@
   color: #000;
 }
 
+/* Адаптив для планшетов */
+@media (max-width: 1024px) {
+  .registration__container {
+    gap: 30px;
+  }
 
-@media (max-width: 992px) {
+  .registration__form,
+  .registration__benefits {
+    width: 48%;
+  }
+
+  .registration__benefits h2 {
+    font-size: 22px;
+  }
+
+  .registration__benefits-text {
+    font-size: 14px;
+  }
+
+  .registration__button {
+    padding: 12px 25px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .registration {
+    padding: 40px 0;
+  }
+
   .registration__container {
     flex-direction: column;
+    gap: 20px;
   }
 
   .registration__form,
@@ -118,6 +148,24 @@
   }
 
   .registration__benefits {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+
+  .registration__benefits h2 {
+    font-size: 20px;
+  }
+
+  .registration__benefits-text {
+    font-size: 13px;
+  }
+
+  .registration__button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .registration__gender {
+    flex-direction: column;
+    gap: 10px;
   }
 }
