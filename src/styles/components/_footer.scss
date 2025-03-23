@@ -17,118 +17,79 @@
   }
 }
 // subscribe.scss
-.subscribe {
-  padding: 0;
+.footer__testimonial-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-image: url('/public/assets/images/subscribe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 97px 126px;
+}
 
-  &__testimonial-subscribe {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-image: url("./img/Foot_2_back.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 97px 126px;
-    margin: 0 auto;
-  }
+.footer__testimonial {
+  flex: 1;
+  text-align: center;
+}
 
-  &__testimonial {
-    max-width: 50%;
+.footer__testimonial img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
-    img {
-      margin-right: 20px;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-    }
+.footer__testimonial blockquote {
+  font-style: italic;
+  text-align: center;
+  color: #222224;
+}
 
-    blockquote {
-      font-style: italic;
-      color: #5e5e5e;
-      font-size: 16px;
-      line-height: 1.5;
+.footer__subscribe {
+  flex: 1;
+  text-align: center;
+}
 
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-      }
-    }
-  }
+.footer__subscribe h3 {
+  font-size: 24px;
+  font-weight: 700 px;
+  color: #222224;
+  margin-bottom: 10px;
+}
 
-  &__subscribe {
-    max-width: 50%;
+.footer__subscribe p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #222224;
+}
 
-    h3 {
-      font-size: 24px;
-      color: #4d4d4d;
-      margin-bottom: 10px;
-    }
+.footer__subscribe form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    p {
-      font-size: 14px;
-      color: #5e5e5e;
-      margin-bottom: 20px;
-    }
+.footer__subscribe input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
 
-    form {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+.footer__subscribe button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #FF6F61;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
 
-      input[type=email] {
-        padding: 10px 15px;
-        font-size: 14px;
-        border: 2px solid #dcdcdc;
-        border-radius: 0;
-        margin-right: 10px;
-        width: 250px;
-
-        &:focus {
-          outline: none;
-          border-color: #ff6f61;
-        }
-      }
-
-      .centralBlockButton {
-        margin-top: 0;
-      }
-    }
-  }
-
-
-  @media (max-width: 992px) {
-    &__testimonial-subscribe {
-      padding: 70px 60px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    &__testimonial-subscribe {
-      flex-direction: column;
-      padding: 50px 30px;
-    }
-
-    &__testimonial,
-    &__subscribe {
-      max-width: 100%;
-      margin-bottom: 30px;
-    }
-
-    &__subscribe form {
-      justify-content: center;
-      flex-wrap: wrap;
-
-      input[type=email] {
-        margin-right: 0;
-        margin-bottom: 15px;
-        width: 100%;
-      }
-
-      .centralBlockButton {
-        width: 100%;
-      }
-    }
-  }
+.footer__subscribe button:hover {
+  background-color: #e65b50;
 }

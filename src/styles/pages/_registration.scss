@@ -9,7 +9,11 @@
   gap: 50px;
 }
 
-/* Стили для формы */
+    p {
+      font-size: 14px;
+      color: #5e5e5e;
+      margin-bottom: 15px;
+    }
 .registration__form {
   width: 45%;
 }
@@ -102,7 +106,7 @@
   color: #000;
 }
 
-/* Адаптивность */
+
 @media (max-width: 992px) {
   .registration__container {
     flex-direction: column;

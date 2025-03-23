@@ -11,7 +11,7 @@
 
 │ ├── cart.html # Страница корзины
 
-│ ├── cregitration.html # Страница регистрации
+│ ├── registration.html # Страница регистрации
 
 │ ├── assets/
 │ │ └── images/ # Изображения

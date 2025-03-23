@@ -30,44 +30,51 @@
 		<!-- Блок покупок -->
 		<section class="cart-items container">
 			<div class="cart-container">
+				<!-- Левая колонка с товарами -->
 				<div class="cart-left-column">
 					<!-- Товар 1 -->
-					<div class="main_container__main_item">
-						<img src="/public/assets/images/img3_catalog.png" alt="Product 1" class="main_image" />
-						<div class="main_container__main_text">
-							<h2>ELLERY X M'O CAPSULE</h2>
-							<p>
-								Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up
-								with Moda Operandi.
-							</p>
-							<p class="main_container__arrivals_price">$52.00</p>
+					<div class="cart-item">
+						<div class="main_container__main_item">
+							<img src="/public/assets/images/img3_catalog.png" alt="MANGO PEOPLE T-SHIRT" />
 						</div>
-						<button class="close-btn">×</button>
+						<div class="cart-item-details">
+							<h3>MANGO PEOPLE T-SHIRT</h3>
+							<div class="cart-item-info">
+								<p>Price: <span class="price">$300</span></p>
+								<p>Color: <span class="color">Red</span></p>
+								<p>Size: <span class="size">XL</span></p>
+								<p>Quantity: <span class="quantity">2</span></p>
+							</div>
+						</div>
+						<button class="cart-item-close">×</button>
 					</div>
 
 					<!-- Товар 2 -->
-					<div class="main_container__main_item">
-						<img src="/public/assets/images/img3_catalog.png" alt="Product 2" class="main_image" />
-						<div class="main_container__main_text">
-							<h2>ELLERY X M'O CAPSULE</h2>
-							<p>
-								Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up
-								with Moda Operandi.
-							</p>
-							<p class="main_container__arrivals_price">$52.00</p>
+					<div class="cart-item">
+						<div class="main_container__main_item">
+							<img src="/public/assets/images/img2_catalog.png" alt="MANGO PEOPLE T-SHIRT" />
 						</div>
-						<button class="close-btn">×</button>
+						<div class="cart-item-details">
+							<h3>MANGO PEOPLE T-SHIRT</h3>
+							<div class="cart-item-info">
+								<p>Price: <span class="price">$300</span></p>
+								<p>Color: <span class="color">Red</span></p>
+								<p>Size: <span class="size">XL</span></p>
+								<p>Quantity: <span class="quantity">2</span></p>
+							</div>
+						</div>
+						<button class="cart-item-close">×</button>
 					</div>
 
-					<!-- Кнопки -->
+					<!-- Кнопки управления корзиной -->
 					<div class="cart-buttons">
-						<button class="clear-cart">CLEAR SHOPPING CART</button>
-						<button class="continue-shopping">CONTINUE SHOPPING</button>
+						<button class="cart-button clear">CLEAR SHOPPING CART</button>
+						<button class="cart-button continue">CONTINUE SHOPPING</button>
 					</div>
 				</div>
 
+				<!-- Правая колонка с формой доставки и итогами -->
 				<div class="cart-right-column">
-					<!-- Адрес доставки -->
 					<div class="shipping-address">
 						<h3>SHIPPING ADDRESS</h3>
 						<form>
@@ -78,37 +85,31 @@
 						</form>
 					</div>
 
-					<!-- Итоговая сумма -->
 					<div class="cart-total">
-						<p>SUB TOTAL <span>$600</span></p>
-						<p class="grand-total">GRAND TOTAL <span>$900</span></p>
-						<button class="checkout-btn">PROCEED TO CHECKOUT</button>
+						<div class="cart-total-inner">
+							<p class="subtotal">SUB TOTAL <span>$600</span></p>
+							<p class="grandtotal">GRAND TOTAL <span>$900</span></p>
+							<button class="checkout-btn">PROCEED TO CHECKOUT</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<!-- Блок подписки -->
-		<section class="subscribe container">
-			<div class="subscribe__testimonial-subscribe">
-				<div class="subscribe__testimonial">
-					<img src="assets/images/Foot_face.png" alt="Profile Picture" />
-					<blockquote>
-						<p>"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum."</p>
-					</blockquote>
-				</div>
-				<div class="subscribe__subscribe">
-					<h3>SUBSCRIBE</h3>
-					<p>FOR OUR NEWSLETTER AND PROMOTION</p>
-					<form action="#">
-						<input type="email" placeholder="Enter Your Email" required />
-						<div class="centralBlockButton">
-							<button type="submit" class="centralBlockButton__button">
-								<span class="centralBlockButton__button_text">Subscribe</span>
-							</button>
-						</div>
-					</form>
-				</div>
+		<section class="footer__testimonial-subscribe container">
+			<div class="footer__testimonial">
+				<img src="assets/images/Foot_face.png" alt="Profile Picture" />
+				<blockquote>
+					<p>"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum."</p>
+				</blockquote>
+			</div>
+			<div class="footer__subscribe">
+				<h3>SUBSCRIBE</h3>
+				<p>FOR OUR NEWSLETTER AND PROMOTION</p>
+				<form action="#">
+					<input type="email" placeholder="Enter Your Email" required />
+					<button type="submit">Subscribe</button>
+				</form>
 			</div>
 		</section>
 
