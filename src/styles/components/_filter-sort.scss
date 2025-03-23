@@ -1,4 +1,3 @@
-// filter-sort.scss
 .filter-sort {
   display: flex;
   justify-content: space-between;
@@ -9,20 +8,44 @@
   .filter,
   .sort {
     display: flex;
-    align-items: center;
+    align-items: center; // Исправлено с align-items: end на center
     gap: 10px;
     cursor: pointer;
-    border: none;
 
     img {
       width: 20px;
       height: 20px;
+      transition: transform 0.3s ease; // Плавное вращение иконки
+
+      &:hover {
+        transform: rotate(90deg); // Вращение иконки при наведении
+      }
     }
 
     span {
       font-size: 14px;
       font-weight: 500;
       color: #222;
+    }
+  }
+
+  .filter {
+    .select-filter {
+      padding: 10px 30px 10px 10px; // Отступы внутри select
+      border: 1px solid #e5e5e5; // Граница
+      border-radius: 5px; // Закругление углов
+      background-color: #fff; // Фон
+      font-size: 14px; // Размер текста
+      color: #222; // Цвет текста
+      appearance: none; // Убираем стандартный стиль браузера
+      -webkit-appearance: none; // Для Safari
+      -moz-appearance: none; // Для Firefox
+      cursor: pointer; // Курсор в виде указателя
+
+      &:focus {
+        outline: none; // Убираем обводку при фокусе
+        border-color: #f16d7f; // Изменяем цвет границы при фокусе
+      }
     }
   }
 }

@@ -1,8 +1,7 @@
 // features.scss
-.features-section .container {
+.navFooter  {
   background-color: $backgroundColorNavFooter; 
   color: white;
-  padding: 60px 0; 
   width: 100%;
     display: flex;
     justify-content: center;
@@ -10,10 +9,10 @@
     gap: 20px; 
     max-width: $widthSite; 
     margin: 0 auto;
-    padding: 0 20px;
-  }
+      }
 
   .feature-item {
+    margin-top: 20px;
     text-align: center;
     width: 280px; 
     .icon {
