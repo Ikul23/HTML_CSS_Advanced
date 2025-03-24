@@ -8,17 +8,17 @@
   .filter,
   .sort {
     display: flex;
-    align-items: center; // Исправлено с align-items: end на center
+    align-items: center; 
     gap: 10px;
     cursor: pointer;
 
     img {
       width: 20px;
       height: 20px;
-      transition: transform 0.3s ease; // Плавное вращение иконки
+      transition: transform 0.3s ease; 
 
       &:hover {
-        transform: rotate(90deg); // Вращение иконки при наведении
+        transform: rotate(90deg); 
       }
     }
 
@@ -31,20 +31,20 @@
 
   .filter {
     .select-filter {
-      padding: 10px 30px 10px 10px; // Отступы внутри select
-      border: 1px solid #e5e5e5; // Граница
-      border-radius: 5px; // Закругление углов
-      background-color: #fff; // Фон
-      font-size: 14px; // Размер текста
-      color: #222; // Цвет текста
-      appearance: none; // Убираем стандартный стиль браузера
-      -webkit-appearance: none; // Для Safari
-      -moz-appearance: none; // Для Firefox
-      cursor: pointer; // Курсор в виде указателя
+      padding: 10px 30px 10px 10px; 
+      border: 1px solid #e5e5e5; 
+      border-radius: 5px; 
+      background-color: #fff; 
+      font-size: 14px; 
+      color: #222; 
+      appearance: none; 
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      cursor: pointer; 
 
       &:focus {
-        outline: none; // Убираем обводку при фокусе
-        border-color: #f16d7f; // Изменяем цвет границы при фокусе
+        outline: none; 
+        border-color: #f16d7f; 
       }
     }
   }
